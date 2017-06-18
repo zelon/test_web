@@ -1,0 +1,1 @@
+[\[Flash\]](%3Cembed%20pluginspage='http://www.macromedia.com/go/getflashplayer'%20src='http://dory.mncast.com/mncHMovie.swf?movieID=10012540520070816201454&skinNum=1'%20width='420'%20height='374'%20type='application/x-shockwave-flash'%3E%3C/embed%3E)

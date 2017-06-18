@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wimyblog>
+  <author>zelon</author>
+  <site_base_url>http://blog.wimy.com</site_base_url>
+  <blog_description>zelon's blog</blog_description>
+  <post_directory>.</post_directory>
+  <page_directory>./page</page_directory>
+  <timezone_string>+0900</timezone_string>
+</wimyblog>
