@@ -1,0 +1,18 @@
+<html>
+  <head>
+  </head>
+  <body>
+    title: 우분투 10.04 한글 글꼴 잘 보이게 설정하기
+    <p>/home/.fonts 폴더에 ttf 파일을 복사하고,(폴더 없으면 만들고)<br />
+/etc/fonts/conf.d/29-language-selector-ko-kr.conf 파일을 편집해서,<br />
+&lt;!-- Turn off antialias and autohint for Korean fonts depending on pixelsize --&gt;<br />
+밑에 있는<br />
+&lt;edit name=&quot;antialias&quot; mode=&quot;assign&quot;&gt;<br />
+        &lt;bool&gt;true&lt;/bool&gt;<br />
+    &lt;/edit&gt;<br />
+        &lt;edit name=&quot;autohint&quot; mode=&quot;assign&quot;&gt;<br />
+        &lt;bool&gt;true&lt;/bool&gt;<br />
+    &lt;/edit&gt;<br />
+이렇게 true 로 수정하면 된다. 기본적으로 이렇게 배포되면 좋을텐데 좀 아쉬운 부분이다.</p>
+  </body>
+</html>
