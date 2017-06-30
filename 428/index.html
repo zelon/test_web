@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/428">어느 게임 서버 개발자의 하루</a>
-    <p>어느날 갑자기 나는 회사에서 무엇을 하고 있는가하는 생각이 들었다. 블로그가 원래 개인의 기록을 남기는 것이기 때문이기도 하고 혹시나 게임 서버 개발자가 되고 싶어하는 사람들이 궁금해할까 싶기도 하고...</p>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/428">어느 게임 서버 개발자의 하루</a></h1>
+        <p>어느날 갑자기 나는 회사에서 무엇을 하고 있는가하는 생각이 들었다. 블로그가 원래 개인의 기록을 남기는 것이기 때문이기도 하고 혹시나 게임 서버 개발자가 되고 싶어하는 사람들이 궁금해할까 싶기도 하고...</p>
 <p> 대략 9시 전후로 자전거를 타고 출근을 한다. 집에서 나서서 회사 자리에 앉기까지 대략 20분 정도 걸리는 거리라서 부담이 없다. 오히려 버스를 타면, 걸어나오는 시간, 버스 기다리는 시간 등 때문에 더 오래 걸린다. 비오면 버스타야함. 9시 30분 기준으로 업무가 시작되며, 좀 늦게 와도 뭐라하는 사람은 없다. 다만, 업무시간 8시간은 다들 알아서 지킨다.</p>
 <p> 출근해서 자리에 앉으면, 어느 자리에서나 보이는, 매우 커다란 모니터에 주기적으로 개발 상태를 체크하는 CI(젠킨스)가 현재 어떤 문제가 발생했는지 알려준다. 문제가 발생하면 빨간 배경에 'XXX Failed, YYY Failed' 같은 화면을 보여주고, 문제가 없으면 '최신 걸그룹 뮤직 비디오' 를 보여준다. 5일 중에 2일 정도는 이런저런 문제가 있기 때문에 이런 문제를 해결한다. 보통은 단순 실수, CI 프로세스의 버그 정도이다. 물론 해결하기 골치 아픈거라서 임시 땜빵으로 넘어가는 경우도 있다. 이런 문제를 해결하는 데 대략 1시간 정도 소모되는 것 같다.</p>
 <p> 일단 급해보이는 'XXX Failed' 들을 해결하고나서 걸그룹 뮤직 비디오가 나오는 걸 잠시 잠깐 보고나서... 덤프 수집 웹페이지를 확인하고 처리한다. 그리고 팀원들의 commit log 들을 훑어보기 시작한다. 어떤 일들이 진행되고 있는지, 내가 실수한 걸 다른 팀원들이 고쳐주지는 않았는지, 다른 팀원들은 어떻게 코드를 만드는지, 나만 이상한 형태로 코드를 만들고 있지는 않은지 확인한다. 좀 관심있거나 흥미를 끄는 commit 은 파일 한줄한줄 diff 하면서 자세히 훑어본다. 궁금한게 있으면 작성자에게 의도를 물어보거나, 내가 생각한 방법은 어떤지 의견을 교환하기도 한다. 의견을 교환하면서 많이 배운다는 느낌도 받는다. 대략 30분~60분 정도의 시간이 소모된다.</p>
@@ -24,5 +46,16 @@
 <p> 다시 일정진행...</p>
 <p> 오후 6시 30분이 퇴근 시간이다. 이 시간이 가까워지면 보통 살짝 다른 형태로 일을 진행하게 된다. 먼저, 함부로 commit 을 만들지 않는다. commit 해서 빌드가 깨지거나 큰 문제가 발생하면 집에 못가는 거다. 그 상태로 집에 가면 무책임하다는 소리가 나올 수 밖에 없다. 물론 조금 늦게 갈 거면 상관없다. 그리고 새로운 작업을 가능하면 시작하지 않는다. 그 대신 밀린 메일을 읽거나, 다른 팀원들의 commit log 를 보기도 한다. 물론 일정이 급하면 일정을 최대한 진행한다.</p>
 <p> 좀 재미있는게, 'XXX Failed' 라는 메시지를 보는 팀원들의 시각이다. 누구나 빨간 배경 화면을 보면 무언가 문제가 있다는 것을 안다. 그리고 누군가는 이 문제를 해결해야 겠다. 누군가는 이 문제를 알려야 겠다. 누군가는 신경 안 쓴다... 누군가 해결하고 있겠지... 하지만 이건 단순한 현상일 뿐이고, 실제로는 얼마큼 해결할 수 있냐에 따라서 반응하는 것 같다. 저게 뭐야 해결해볼까... 아... 어렵구나... 흰건 배경이고 까만건 글자인데... 아몰랑... 그래서 팀에 합류한지 오래되면 문제 해결을 더 잘하게 되는 경향이 있다. 그런데 이걸 잘 해결한다고 해서 프로그래밍을 잘하게 된다거나 그런건 아니다. 그냥 소모적인 시간을 좀 더 쓸 뿐...</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

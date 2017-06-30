@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/24">드디어 ZViewer 에 알씨보다 더 나아진 기능 추가~~</a>
-    <p>아~~ 감격 ㅠ.ㅜ<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/24">드디어 ZViewer 에 알씨보다 더 나아진 기능 추가~~</a></h1>
+        <p>아~~ 감격 ㅠ.ㅜ<br />
 ZViewer 에 드디어 알씨보다 더 좋다고 생각되는 기능이 추가되었다. 바로 이미지 캐시 기능~~ 모든게 장점만 있는 기능은 아니지만 일단 겉으로 보기에는 이미지를 더 빨리 보여주기 때문에 ^^;;; 그렇다면 단점은 무엇이냐 당연히 캐시를 하기 때문에 메모리를 좀 더 쓴다랄까... 하긴 이건 이미 다른 많은 이미지 뷰어에서도 쓰고 ZViewer 에서도 이전 버젼에 있는 것이기 때문에 단점은 스킵~~<br />
 좀 더 소개를 해보자면~<br />
 현재 ZViewer 는 이미 이미지를 백그라운드 쓰레드에서 캐시하고 있었다. 약 50 메가 정도의 캐시를 만들어 놓으며(이 용량은 조절이 가능한데 아직 설정 파일 기능이 들어있지 않아서 하드 코딩된거나 마찬가지;;), 현재 보고 있는 파일을 기준으로 앞으로 몇개, 뒤로 몇개를 캐시하고 있는데, 이 알고리즘이 나에겐 적당히 복잡하여 이것을 완성한 후로 '음 나는 캐시에 성공했어~~' 이렇게 즐거워하고 있었다.<br />
@@ -16,5 +38,16 @@ ZViewer 에 드디어 알씨보다 더 좋다고 생각되는 기능이 추가�
 여튼 이렇게 코드를 수정하고 디카 사진을 보니 감동~ ㅠ.ㅜ 혹시나 해서 알씨를 돌려보니... ZViewer 가 더 빠르다 더욱더 감동 ㅠ.ㅜ<br />
 당장 눈에 띄이는 몇몇 버그를 수정하고, rc 만들어서 회사 컴터와 노트북에 깔아서 몇일 테스트하고 릴리즈를 해야겠다.<br />
 역시 개발자가 불편을 느껴야 빠르게 수정을 한다는 것을 새삼느끼며.... 다음에는 뭘 작업하지 @.@</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

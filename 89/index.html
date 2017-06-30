@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/89">Visual Studio .NET 2005 설치 중 윈도우 에러 상황(WinSxS)</a>
-    <p>MS Visual Studio.NET 2005 를 설치 중 용량 문제로 설치가 제대로 되지 않았다. 이 사실도 문제가 발생한 후 관리도구 -&gt; 이벤트 뷰어를 통해서 알아낸 문제였는데, 결과적으로는 각종 프로그램을 실행 시에 특이한 에러(0xc0000) 를 내면서 프로그램이 실행이 안되는 거 였다.<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/89">Visual Studio .NET 2005 설치 중 윈도우 에러 상황(WinSxS)</a></h1>
+        <p>MS Visual Studio.NET 2005 를 설치 중 용량 문제로 설치가 제대로 되지 않았다. 이 사실도 문제가 발생한 후 관리도구 -&gt; 이벤트 뷰어를 통해서 알아낸 문제였는데, 결과적으로는 각종 프로그램을 실행 시에 특이한 에러(0xc0000) 를 내면서 프로그램이 실행이 안되는 거 였다.<br />
  특히 윈도우를 시작 후 로그인 시에 IMKRMIG.EXE 프로그램이 위의 현상을 일으키면서 실행이 되지 않았는데 찾아보니 IME 프로그램이었으며, 여러 프로그램에서 한글이 입력되지 않았다.<br />
  그냥 윈도우를 다시 깔까 하다가, 문제를 해결해보기로 마음먹고 일단 관련 dll 이 없나 싶어서 Dependency Walker 로 해당 실행 파일을 체크해보니 MSVCR80.dll 을 찾지 못하는 것이었다.<br />
  그래서 다른 윈도우의 MSVCR80.dll 을 system32 폴더로 복사해왔는데 그래도 찾지 못했다 -_-;<br />
@@ -22,5 +44,16 @@
 </blockquote>
 <p> 라고 되어있다. 음... 이런게 xp 부터 지원되었었군 크~~<br />
  학교 실습실에서 Administrator 생활을 하지 않은 후 별 관심이 없었는데 황당한 윈도우 오류를 하나 해결해보니 기분이 좋군 ㅎㅎ</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

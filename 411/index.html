@@ -1,13 +1,46 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/411">게임서버에서의 non paged pool memory 누적 현상</a>
-    <p>내부 게임 서버 테스트 중에 이상하게 non paged pool memory 가 어느 순간부터 점점 증가하다가 갑자기 치솟아서 메모리를 모두 소모하는 문제가 발생했다.<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/411">게임서버에서의 non paged pool memory 누적 현상</a></h1>
+        <p>내부 게임 서버 테스트 중에 이상하게 non paged pool memory 가 어느 순간부터 점점 증가하다가 갑자기 치솟아서 메모리를 모두 소모하는 문제가 발생했다.<br />
 원인은 더미 클라이언트를 여러개 띄워서 테스트를 했는데 더미 클라이언트의 pc 가 점점 느려져서 패킷을 제대로 받지 못하자 서버가 네트웍으로 보낸 패킷들이 제대로 소모되지 못하고 non paged pool 에 쌓인것.<br />
 누군가로부터 들은바로는 클라이언트마다 패킷큐를 두고 하나의 패킷이 다 전송되었음을 완료하고난 후에 다음 패킷을 보내는 방식으로는 괜찮을거라고.... 하지만 아직 정확한 테스트는 안해봤음;;</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

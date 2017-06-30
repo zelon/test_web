@@ -1,14 +1,47 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/137">Virtualbox 에서 Vista 설치 후 네트워크 잡기</a>
-    <p> 이제 슬슬 비스타를 경험할 때도 되었다는 생각에 VirtualBox 에 Vista 를 설치해보았다. 설치는 문제 없었는데 XP 때와 다르게 네트워크 드라이버를 제대로 잡지 못하는 것 같았다.<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/137">Virtualbox 에서 Vista 설치 후 네트워크 잡기</a></h1>
+        <p> 이제 슬슬 비스타를 경험할 때도 되었다는 생각에 VirtualBox 에 Vista 를 설치해보았다. 설치는 문제 없었는데 XP 때와 다르게 네트워크 드라이버를 제대로 잡지 못하는 것 같았다.<br />
  VirtualBox 의 Guest Addon 도 설치해보았는데 제대로 잡지 못해서 이래저래 검색을 해보니, Guest Addon 을 설치하면 CD-ROM 에 Guest Addon 을 위한 ISO 가 마운트되게 되는데 여기의 AMD_PCnet 이라는 폴더 안에 네트워크 드라이버가 있다는 것이었다.<br />
  그래서 장치 관리자에서 해당 폴더의 드라이버를 설치해주니 네트워크(NAT로 설정)가 동작되었다.<br />
 <img src="VistaNetworkOnVirtualBox.png" width="421" height="450" /></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/386">구글 코드잼 준비 및 Dancing With the Googlers 풀이</a>
-    <p>구글 코드잼(<a href="http://code.google.com/codejam" class="uri">http://code.google.com/codejam</a>) 은 일종의 알고리즘 대회이다. 주어진 문제를 원하는 프로그래밍 언어로 풀고, 입력값을 받아서 출력값을 소스코드와 함께 제한된 시간 안에 제출하면 된다.</p>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/386">구글 코드잼 준비 및 Dancing With the Googlers 풀이</a></h1>
+        <p>구글 코드잼(<a href="http://code.google.com/codejam" class="uri">http://code.google.com/codejam</a>) 은 일종의 알고리즘 대회이다. 주어진 문제를 원하는 프로그래밍 언어로 풀고, 입력값을 받아서 출력값을 소스코드와 함께 제한된 시간 안에 제출하면 된다.</p>
 <p> 각 문제당 small/large 2종류의 입력값이 있고, 이에 따른 점수가 다르며, small 문제를 제대로 풀어야 large 문제를 풀 수 있다. small 문제는 한번 틀리면 다시 제출이 가능하지만, large 문제는 한번만 제출이 가능하며 대회 끝난 후 정답 체크를 해준다.</p>
 <p> 일단 해당 사이트에 들어가면 연습 문제를 풀어볼 수 있는데, 연습문제를 풀다보면 어떤 형태로 문제가 제출되는지를 알 수 있다. 그리고 모든 문제가 예제 입력/예제 결과가 있는데, 이를 이용하면 TDD(Test Driven Development) 형태로 자신의 프로그램을 테스트해가면서 프로그래밍할 수 있다.</p>
 <p> 지난 구글 코리아 한국대회를 일주일 정도(퇴근 후 집에서) 준비하면서, 몇 문제를 풀어보면서 실제 대회에서 쓰일 기본 코드와 unittest 환경을 만들었다. 아무래도 주 사용언어는 C++ 이고, 10년 정도 써온 Visual Studio 를 쓰면 좋았겠지만, 무료 개발툴만 사용이 권장되었고, 마침 집에서는 linux desktop(ubuntu)을 쓰고 있어서 linux + gcc + python + vim 을 사용하기로 했다. 사실 많이 익숙하지는 않지만, 그래도 제법 손에 익어있는 상태라서 써보기로 했다. 참고로 구글 코리아 한국대회는 예선통과 실패. 이번 세계 대회는 예선 통과 ㅋ 딱히 공부는 안 했는데 경험 문제도 있겠지만, 구글 코리아 문제가 훨씬 어렵게 나온듯;;</p>
@@ -302,5 +324,16 @@
 <p> - 실행 시간을 측정하는 툴이 있나? - large 문제 도전하기 전에...</p>
 <p> - large 문제의 scale 은 어느 값이 많이 늘어나나? 이 값으로 large 문제가 어느 부분이 최적화가 필요한지 짐작할 수 있다.</p>
 <p> - 컴파일 최적화를 할 줄 아나? (굳이 필요는 없을듯. 어차피 large 문제에 가면 컴파일러 최적화로 해결되는 시간이 아니더라는;;)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

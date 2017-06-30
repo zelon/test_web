@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/91">우툰투 7.04 에서 GeForce 8800 제대로 잡기</a>
-    <p>드디어 그래픽 카드 때문에 설치를 제대로 못 했던 우분투를 멤버십 데스크탑에 깔았다. 일단 기본적으로 그래픽 카드를 제대로 인식해서 저번 6 버젼의 우분투에서 설치조차 제대로 할 수 없던 게 해결되었다.<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/91">우툰투 7.04 에서 GeForce 8800 제대로 잡기</a></h1>
+        <p>드디어 그래픽 카드 때문에 설치를 제대로 못 했던 우분투를 멤버십 데스크탑에 깔았다. 일단 기본적으로 그래픽 카드를 제대로 인식해서 저번 6 버젼의 우분투에서 설치조차 제대로 할 수 없던 게 해결되었다.<br />
  그런데 기본적으로 설치할 수 있는 NVidia binary 를 설치하니 X-window 가 다운되었다. 그래서 검색해보니 <a href="http://www.ubuntugeek.com/how-to-fix-nvidia-acceleration-in-feisty-nvidia-8800-and-legacy-users.html">[이 곳]</a> 에서 제대로 된 정보를 얻을 수 있었다.<br />
  영어로 되어 있으니 한글로 간단히 요약해 보자.<br />
  먼저 firefox 등의 웹브라우저를 통해서 nvidia.com 에서 리눅스용 드라이버를 다운받아 둔다.<br />
@@ -20,5 +42,16 @@
 <p>리부팅된 시스템에서 부팅되기 전에 recovery 모드로 들어와서 아까 다운받아놓은 드라이버를 다음과 같이 실행시킨다.</p>
 <p> sudo sh NV*<br />
  설치 과정 중 xorg.conf 파일을 업데이트 시킬지를 물어보는데 yes 라고 한다. 그런 후 sudo reboot 를 하면 제대로 설정된 nvidia with 우분투를 만날 수 있다.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

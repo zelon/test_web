@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/381">안드로이드 Lint 초기 경고 없애기</a>
-    <p> 안드로이드 개발툴의 최신 버젼(ADT 16버젼 - 2011년 12월)에는 Lint 라는 툴이 추가되었다. 설치 후, 화면에 아래와 같은 아이콘을 클릭하면, Lint 를 실행하여 잠재적으로 문제가 있는 부분을 알려주게 된다.</p>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/381">안드로이드 Lint 초기 경고 없애기</a></h1>
+        <p> 안드로이드 개발툴의 최신 버젼(ADT 16버젼 - 2011년 12월)에는 Lint 라는 툴이 추가되었다. 설치 후, 화면에 아래와 같은 아이콘을 클릭하면, Lint 를 실행하여 잠재적으로 문제가 있는 부분을 알려주게 된다.</p>
 <p><img src="캡처.PNG" width="74" height="35" /></p>
 <p><img src="MissingDensity.PNG" width="344" height="78" /></p>
 <p> 그런데,  웃긴건 안드로이드 기본 프로젝트를 생성해도 위와 같은 경고를 보여준다는 것이다. 위 내용을 읽어보면, drawable-xhdpi 라는 density 가 없다는 것인데, 요즘 고해상도 폰이 많이 나오면서 높은 해상도를 지원하라는 의미로 받아들이고, 일단 res 디렉토리 아래에 drawable-xhdpi 를 만들고, 임시로, drawable-hdpi 의 이미지 파일을 넣어보자. 그러면....</p>
@@ -17,5 +39,16 @@
  이제 Lint 를 다시 실행시켜보면 깔끔하게 하나의 경고도 없는 것을 볼 수 있다.<br />
  아마 ADT 최신 버젼이 나오면 알아서 xhdpi 용 아이콘을 넣어주지 않을까 싶지만, 임시로 이렇게 해서 깔끔하게 Lint 사용을 시작해보자~<br />
  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>

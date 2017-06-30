@@ -1,12 +1,34 @@
+<!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="test_web : Test github web features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=62db42312c52c13e432fc155e04769163f3296fe">
+
     <title>zelon's blog</title>
   </head>
+
   <body>
-    <p><a href='/'>blog.wimy.com</a></p>
-    <hr>
-    title: <a href="/101">우분투의 자바 지원에 낚이다</a>
-    <p> 크~~ ㅠ.ㅜ<br />
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zelon/test_web">View on GitHub</a>
+
+          <h1 id="project_title">Zelon's Blog</h1>
+          <h2 id="project_tagline">Test github web features</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="blogwimycom"><a href="/101">우분투의 자바 지원에 낚이다</a></h1>
+        <p> 크~~ ㅠ.ㅜ<br />
  우분투에 Sun 의 공식 자바를 GUI 상에서 간단하게 '프로그램 추가/제거' 를 통해서 거의 몇번만 클릭하면 깔아줘서 좋았다고 <a href="http://www.wimy.com/tt/57">생각</a>했다.<br />
  그런데 이게 조금 낚시성이었다. -_-;;; 아마 나만 몰랐던게 아니라고 생각한다. 바로 이렇게 설치한 자바 Runtime 은 설치만 될뿐 설정이 제대로 되지 않은 것이었다.<br />
  자바를 설치한 후 console 을 하나 열어서 java 라고 쳐서 실행해보자. Sun 의 java 의 도움말이 나오는게 아니라, gij 의 도움말이 나올 것이다. 그렇다. 설치만 되었을뿐 '설정' 이 안된거다.<br />
@@ -22,5 +44,16 @@ sudo update-java-alternative --set java-6-sun</p>
 <p> - iolo 님으로부터</p>
 <p> - <a href="http://kldp.org/node/84800" class="uri">http://kldp.org/node/84800</a></p>
 </blockquote>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">test_web maintained by <a href="https://github.com/zelon">zelon</a></p>
+      </footer>
+    </div>
+
+
   </body>
 </html>
