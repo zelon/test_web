@@ -164,6 +164,7 @@ a { text-decoration: none; color: #007edf; text-shadow: none; transition: color 
 a:hover, a:focus { text-decoration: underline; }
 
 footer a { color: #F2F2F2; text-decoration: underline; }
+header a { color: #FFF; text-decoration: none; }
 
 em { font-style: italic; }
 
