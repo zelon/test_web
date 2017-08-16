@@ -18,20 +18,20 @@
       <description>&lt;p&gt;언젠가 한번 글로 정리해봐야지 하던 것을 한번 적어본다.&lt;/p&gt;
 &lt;p&gt;내가 처음 hello world를 모니터에 띄워본지 꽤 되었기 때문에, 지금은 어느 정도 쓸 수 있다고 생각하는 언어가 몇 개 있다. C++, Python, C#, Java, Go, Javascript 정도가 있다. 물론 언어마다 숙련도가 꽤 차이가 난다.&lt;/p&gt;
 &lt;p&gt;어떤 새로운 프로그램을 만들 때 어떤 기준으로 언어를 고를까를 생각해보다가, 나에게는 2가지의 기준이 있다는 생각이 들었다.&lt;/p&gt;
-&lt;h1 id="garbage-collection"&gt;Garbage Collection&lt;/h1&gt;
+&lt;p&gt;# Garbage Collection&lt;/p&gt;
 &lt;p&gt;먼저 Garbage Collection 이 있느냐 없느냐이다. 이 기준은 성능에 민감한, 특히 온라인 게임 서버 중 필드 던전(불특정 다수가 만나서 전투를 할 수 있는 공간)을 랙 없이 구현할 수 있는 언어이냐 아니냐를 판단하는 기준이 된다. 쉽게 생각해서 Garbage Collection이 동작하게 되었을 때, 전투가 벌어진다면, 버벅이게 될 것이기 때문이다. 그래서 Garbage Collection이 있는 언어는 이런 서버를 제작할 때는 배제되어야 한다. &lt;/p&gt;
 &lt;p&gt;그래서, 이런 서버를 만들 때는 C++을 쓸 수 밖에 없을 것 같다. Rust라는 언어가 최근에 나온 언어 중에는 Garbage Collection이 없다고 하는데, 아직 한번도 안 써봐서, 기회가 온다면 한번 살펴봐야 겠다.&lt;/p&gt;
-&lt;h1 id="--vs--"&gt;동적 타입 vs 정적 타입&lt;/h1&gt;
+&lt;p&gt;# 동적 타입 vs 정적 타입&lt;/p&gt;
 &lt;p&gt;그리고 또 하나의 기준은 동적 타입이냐, 정적 타입이냐이다. 동적 타입인 python+Javascript로 약 4천줄의 코드를 5년 정도 유지보수하면서 느낀 것은 컴파일을 하면 쉽게 잡히는 버그들을 실행시간에 만나게 된다는 것이다. 그냥 함수 이름을 하나 더 알아보기 쉽게 바꾸었는데, 혹시나 내가 검색하지 못한 곳에서 참조하고 있을까봐 전전긍긍하게 되거나, 변수 하나 삭제했는데, 테스트 못한 케이스가 있을까봐 조바심을 낸다. 혹시나 이런 경우는 유닛 테스트를 잘 짜지 못해서 그렇다고 할 수도 있지만, 글쎄, 많은 케이스들을 로직 검증을 위해서가 아닌, code coverage 테스트를 위해서 하나하나 유닛 테스트로 짜고 있는 자신을 보고 있으면, 내가 왜 이러고 있나라는 생각이 든다.&lt;/p&gt;
 &lt;p&gt;그래서, 동적 타입의 스크립트 언어(pytho, javascript등)는 실행시켰을 때, if/for/while 등의 조건 분기가 없는 코드를 짜는 것 정도는 납득할만하다. 어차피 한번 실행시키면 대부분의 코드가 테스트되기 때문이다. 그 외에 복잡한 로직이 들어가고 depth가 깊어지는 코드라면 동적 타입의 언어는 버리자. 사실 이렇게 생각하면, python을 쓸 수 없는데, 그자리를 go언어와 C#스크립트(Visual Studio 2015 Update3이상 설치)가 이제 그 대안이 될 수 있을 것 같다. 그리고 javascript의 경우에는 typescript를 통해서 컴파일해낸 javascript를 사용하게 될 것 같다.&lt;/p&gt;
-&lt;h1 id="-"&gt;나의 결론&lt;/h1&gt;
+&lt;p&gt;# 나의 결론&lt;/p&gt;
 &lt;p&gt;python 이제 봉인하자&lt;/p&gt;
 &lt;p&gt;javascript는 typescript로 컴파일해내서 쓴다&lt;/p&gt;
 &lt;p&gt;스크립트는 가능하면 C# script, cross platform은 go언어&lt;/p&gt;
 &lt;p&gt;랙없어야 하는 서버는 C++. 시간나면 rust 잠깐 봐두자&lt;/p&gt;
 &lt;p&gt;랙이 큰 문제없는 서버는 내가 만들 일이 거의 없긴 한데, C#을 기본으로 하고, java를 보는게 어떨까 고민 중...&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/437</guid>
-      <pubDate>2017-06-07 23:25:05</pubDate>
+      <pubDate>2016-09-28 23:43:47</pubDate>
     </item>
     <item>
       <title>[책소개] 코딩을 지탱하는 기술</title>
@@ -39,7 +39,7 @@
       <description>
       </description>
       <guid>http://blog.wimy.com/436</guid>
-      <pubDate>2017-06-07 23:24:56</pubDate>
+      <pubDate>2016-07-08 09:53:31</pubDate>
     </item>
     <item>
       <title>대체 누가 내 스택에 숫자 2를 적었나</title>
@@ -48,7 +48,7 @@
 &lt;p&gt;갑자기 스택에 이상한 값이 쓰여지는 현상을 디버깅하는 과정을 정리한 글. 과정을 따라가는 것이 흥미롭다.&lt;/p&gt;
 &lt;p&gt;결론은 시스템 콜 안에서 예외가 발생해서 unwinding 되었고, 콜 안에서 사용된 스택 변수의 값이 뒤늦게 세팅되어서 발생되었다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/435</guid>
-      <pubDate>2017-06-07 23:24:56</pubDate>
+      <pubDate>2016-05-18 18:36:17</pubDate>
     </item>
     <item>
       <title>[영화감상] 하늘에서 음식이 내린다면</title>
@@ -57,7 +57,7 @@
 &lt;p&gt; 하늘에서 비가 아닌 음식이 내리면 어떻게 될까라는 생각에서 시작된 영화인데, 정말 재미있는 상황들이 벌어진다. 가족애, 멜로, 액션, (말도 안되는)과학, 자기 개발(?) 등 다양한 재미를 준다. 후반부를 볼 때, 애들이랑 저녁 먹으면서 봐서, 윈도우10에 DVD Player App 을 설치하면서 까지 다시 뒷장면을 제대로 봤다. 애들이 있다면 강추~&lt;/p&gt;
 &lt;p&gt; 내가 봤을 때는 포탈, 스타워즈, 모탈컴뱃, 반지의 제왕 정도의 오마주가 있었다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/434</guid>
-      <pubDate>2017-06-07 23:24:56</pubDate>
+      <pubDate>2016-05-08 21:31:05</pubDate>
     </item>
     <item>
       <title>유니티 클라우드 빌드에서 만든 app 이 유니티 로그 화면에서 멈출 때</title>
@@ -66,7 +66,7 @@
 &lt;p&gt; Config -&amp;gt; Show Advanced Options -&amp;gt; Edit Advanced Options 클릭 -&amp;gt; Scene List 에 본인의 Scene 파일 이름(예를 들면 Default)를 적고 Add 버튼을 누른 후 저장하자. 아마 제대로 된 경로(Assets/Default.unity)를 보여줄 것이다. &lt;/p&gt;
 &lt;p&gt; 즉, 클라우드 빌드 시에 기본으로 시작할 scene 을 지정해주지 않아서 발생한 문제였다(사실 이걸 왜 굳이 설정해줘야 하는지는 의아하지만;;). 여튼 이제 다시 빌드를 후 apk 를 설치해보자. 잘 시작된다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/433</guid>
-      <pubDate>2017-06-07 23:24:56</pubDate>
+      <pubDate>2016-04-26 00:30:33</pubDate>
     </item>
     <item>
       <title>동방불패를 보다</title>
@@ -74,7 +74,7 @@
       <description>&lt;p&gt;이제야 영화 '동방불패' 를 봤다. 1992년 작품이다. 아는 형이 '동방불패'를 외치며 뛰어다닐 때도 그러려니 하고 있었는데, 난 명작 영화를 놓친 게 너무 많다. 돌이켜보면 사실 저 시대에는 난 국민학교 6학년이었고, 그 나이가 볼 영화도 그 당시에 볼 환경도 아니었던 것 같다.&lt;/p&gt;
 &lt;p&gt; '양들의 침묵' 을 봤을 때 느꼈던, 그 이후에 나온 많은 영화들이 그 모티브를 가져와서 너무 식상해진 명작 영화를 보는 느낌이었지만, 동방불패는 지금봐도 꽤 볼만하다는 느낌이었다. 동성애와 원수와의 사랑이 적절하게 녹아있고, 오랜 만에 봐서인지 중국식 칼싸움 액션(!)이 꽤 멋있다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/432</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2016-03-07 22:14:00</pubDate>
     </item>
     <item>
       <title>한국에서 appengine 응답이 느린 이유는 위치 때문이다</title>
@@ -85,7 +85,7 @@
 &lt;p&gt;테스트 사이트 : &lt;a href="http://test-try-go.appspot.com/" class="uri" class="tx-link"&gt;http://test-try-go.appspot.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;소스 코드 : &lt;a href="https://github.com/GoogleCloudPlatform/appengine-try-go" class="uri" class="tx-link"&gt;https://github.com/GoogleCloudPlatform/appengine-try-go&lt;/a&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/431</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-11-28 11:53:14</pubDate>
     </item>
     <item>
       <title>TubeEnglish 를 소개합니다</title>
@@ -106,7 +106,7 @@
 &lt;p&gt;나름 열심히 준비했는데, 아이디어가 조금 부족했던 것 같다. 나름 요긴하게 쓰는 사이트가 되겠지만 말이다. 아쉽지만, 다음을 기약하며 관련 지식을 좀 더 습득했는 걸로 만족하자.&lt;/p&gt;
 &lt;p&gt;끝.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/430</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-11-25 00:24:40</pubDate>
     </item>
     <item>
       <title>go언어 + appengine 으로 개발하면서 겪은 것들</title>
@@ -118,7 +118,7 @@
 &lt;p&gt;일반 go 언어에서는 http.Get 으로 다른 웹페이지를 가져오지만, appengine 에서는 &amp;quot;appengine/urlfetch&amp;quot; 를 사용해야 한다&lt;/p&gt;
 &lt;p&gt;index.yaml 에서 특정 디렉토리 전체를 업로드/노출시킬 수 있다. static_dir 구문을 사용하면 쉽게 가능하다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/429</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-11-24 23:48:20</pubDate>
     </item>
     <item>
       <title>어느 게임 서버 개발자의 하루</title>
@@ -142,7 +142,7 @@
 &lt;p&gt; 오후 6시 30분이 퇴근 시간이다. 이 시간이 가까워지면 보통 살짝 다른 형태로 일을 진행하게 된다. 먼저, 함부로 commit 을 만들지 않는다. commit 해서 빌드가 깨지거나 큰 문제가 발생하면 집에 못가는 거다. 그 상태로 집에 가면 무책임하다는 소리가 나올 수 밖에 없다. 물론 조금 늦게 갈 거면 상관없다. 그리고 새로운 작업을 가능하면 시작하지 않는다. 그 대신 밀린 메일을 읽거나, 다른 팀원들의 commit log 를 보기도 한다. 물론 일정이 급하면 일정을 최대한 진행한다.&lt;/p&gt;
 &lt;p&gt; 좀 재미있는게, 'XXX Failed' 라는 메시지를 보는 팀원들의 시각이다. 누구나 빨간 배경 화면을 보면 무언가 문제가 있다는 것을 안다. 그리고 누군가는 이 문제를 해결해야 겠다. 누군가는 이 문제를 알려야 겠다. 누군가는 신경 안 쓴다... 누군가 해결하고 있겠지... 하지만 이건 단순한 현상일 뿐이고, 실제로는 얼마큼 해결할 수 있냐에 따라서 반응하는 것 같다. 저게 뭐야 해결해볼까... 아... 어렵구나... 흰건 배경이고 까만건 글자인데... 아몰랑... 그래서 팀에 합류한지 오래되면 문제 해결을 더 잘하게 되는 경향이 있다. 그런데 이걸 잘 해결한다고 해서 프로그래밍을 잘하게 된다거나 그런건 아니다. 그냥 소모적인 시간을 좀 더 쓸 뿐...&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/428</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-09-03 01:23:51</pubDate>
     </item>
     <item>
       <title>코드가 망가지는 과정</title>
@@ -155,7 +155,7 @@
 &lt;p&gt;새로운 누군가가 정말 간단한 기능을 추가했다. 그런데 중요한 기능이 동작하지 않는다. 디버깅을 한다. 헤맨다. 함수는 엄청나게 길고, 비슷한 클래스들이 여기저기 있고, 이상하게 코드들이 일관성이 없다. 읽기가 힘들다. 이 파일 저 파일을 따라가면서 디버깅을 해야한다.&lt;/p&gt;
 &lt;p&gt; What the XXXX. 코드가 왜 이렇게 된거야~~~~~!!!&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/427</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-09-02 00:21:00</pubDate>
     </item>
     <item>
       <title>여러명이 함께 협업해서 코드를 만들 때 발생하는 일들</title>
@@ -167,7 +167,7 @@
 &lt;p&gt;내가 별 의미없이 수정한 코드를 동료들이 볼 때 '왜 이렇게 했을까... 뭔가 이상한데, 분명 의도가 있을거야. 그 의도는 무엇일까...' 하게 되는 경우가 있다.&lt;/p&gt;
 &lt;p&gt; 위에서 동료들은 '6개월 후의 자기 자신' 그리고 '디버깅 중인 자기 자신' 이 포함된다는 걸 잊지말자.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/426</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-09-01 00:21:14</pubDate>
     </item>
     <item>
       <title>프로그래밍을 할 때 변수, 클래스의 이름을 잘 지어야한다</title>
@@ -178,7 +178,7 @@
 &lt;p&gt;자꾸 다른 사람들이 이 XXXManager 클래스에 이런저런 코드들을 넣는 이유는 이름이 Manager 이기 때문이다. 클래스 이름을 좀더 특화시켜서, Creator 라고 지었으면, 생성과 관련 없는 코드를 다른 사람들이 추가하지 않았을 것이고, 생성에 관련된 코드만 모여있게 될 것이다. Manager 라는 이름으로 클래스를 만들면, 누구나 아무 코드를 집어넣는다. 그리고 그렇게 뚱뚱해진 클래스는 디버깅하는 데에 계속 걸림돌이 된다.&lt;/p&gt;
 &lt;p&gt;이름을 잘 짓자.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/425</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-09-01 00:08:39</pubDate>
     </item>
     <item>
       <title>iocp WSARecv 에서의 특이한 10014 오류</title>
@@ -187,7 +187,7 @@
 &lt;p&gt; 결론은 winsock2.h 를 include 하기 전에 #pragma pack (1) 코드가 있었다. 제거하니 잘된다. ㅠㅜ 아마 pragma pack 에 의해서 winsock2.h 에서 정의하는 구조체가 pack 되어버렸을 것이고, 그렇게 pack 된 구조체만큼을 new 해서 인자로 넘겨주니, 함수로 넘겨진 포인터는 함수가 원하는 크기가 아니어서 생긴 오류인 듯.&lt;/p&gt;
 &lt;p&gt; bad pointer 오류 상황에서는 pragma pack 도 연관될 수 있다는 걸 깊이 새겨야겠다. 하지만 이런 오류를 다시 만날 일은 없겠지.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/424</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-06-04 23:21:52</pubDate>
     </item>
     <item>
       <title>나의 백업 방법</title>
@@ -195,7 +195,7 @@
       <description>&lt;p&gt;한 때는 외장하드에 주기적으로 백업을 했었으나 집에 불이라도 나면 다 날아간다는 생각에 클라우드로 백업을 하기로 했다.&lt;br /&gt;
 주기적으로 알람을 걸어놓고 때가 되면 스크립트로 ms azure 파일 서비스를 이용해서 백업을 한다. 초기 백업에는 시간이 꽤 걸리지만 두번째부터는 바뀌거나 새로운 파일만 가기 때문에 시간도 그나지 많이 걸리지도 않는다. 그리고 회사에서 msdn subscription을 지원해줘서 무려 공짜! ㅋㅋ&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/423</guid>
-      <pubDate>2017-06-07 23:26:01</pubDate>
+      <pubDate>2015-05-09 23:13:59</pubDate>
     </item>
     <item>
       <title>레이드1 이라도 fat 는 날아간다 ㅠㅜ</title>
@@ -204,7 +204,7 @@
 원래 하드가 꽤 오래되어서 2개를 새로 사서 다시 레이드1 구성해서 쓰게로 했다. 다행히 클라우드에 백업을 두기적으로 했기에 날아간건 약 일주일 분량의 사진 20장 정도. 그래도 뭔가 궁극의 레이드! 라고 생각했었는데 생각보다 쉽게 데이터가 깨져서 좀 멘붕이다 ㅠㅜ&lt;/p&gt;
 &lt;p&gt; 역시 궁극은 클라우드 백업이다 -_-/&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/422</guid>
-      <pubDate>2017-06-07 23:26:01</pubDate>
+      <pubDate>2015-05-09 23:10:31</pubDate>
     </item>
     <item>
       <title>버팔로 공유기가 이상할 때</title>
@@ -213,7 +213,7 @@
 현상은 와이파이가 계속 한번씩 안되는거였는데 첨에 펌웨어 자동 업그레이드 후부터 그런거 같았는데... 그래서 버리기 직전에 저거 한번 써보자해서 해봤는데 잘됨&lt;br /&gt;
 다들 한번 해보세요~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/421</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2015-05-09 23:03:10</pubDate>
     </item>
     <item>
       <title>[책] 프로그래머가 몰랐던 멀티코어 CPU 이야기</title>
@@ -224,7 +224,7 @@
 &lt;p&gt; 책의 밑줄 친 내용은 &lt;a href="https://docs.google.com/document/d/105D0-K746Mgk-scuDWUVmuKxcs_a3De4n9r0j_ysJYw/edit?usp=sharing" class="tx-link"&gt;구글 문서[링크]&lt;/a&gt;로 정리했다.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;</description>
       <guid>http://blog.wimy.com/420</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-03-13 22:46:00</pubDate>
     </item>
     <item>
       <title>프로그래머의 정파와 사파</title>
@@ -232,7 +232,7 @@
       <description>&lt;p&gt;난 열혈강호를 좋아한다. 팀장님의 정파 사파 이론.&lt;/p&gt;
 &lt;p&gt;구글 검색을 바로 하면 사파, API Manual 을 뒤진다면 정파 등등&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/419</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-03-04 23:15:37</pubDate>
     </item>
     <item>
       <title>boost 라이브러리 사용 중 링크 에러</title>
@@ -247,7 +247,7 @@
 &lt;p&gt; b2 address-model=64 로 빌드를 다시 하니 링크 오류 해결~!! &lt;/p&gt;
 &lt;p&gt;ps: 왜 boost 라이브러리에는 x86 이니 x64 같은게 lib 파일이름에 없을까라며 괜히 욕해본다;;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/418</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2015-01-09 01:18:17</pubDate>
     </item>
     <item>
       <title>Google Inbox 에 대한 생각</title>
@@ -258,7 +258,7 @@
 &lt;p&gt; Inbox 를 잠깐 써본 소감은 간단히 얘기하자면 '지메일의 용어를 바꾸고, 알림을 추가했다' 정도이다. 기본 메일 목록을 할일 목록으로 생각하고, 보관함은 처리가 끝난 일로 생각한다. 이 방법은 사실 지메일을 할일목록처럼 쓰던 많은 사람들이 머릿속으로 생각하고 있던 방식일 것이다. 그리고 여기에 할일목록 앱의 기본 기능 중 하나인 알람을 넣었다.&lt;/p&gt;
 &lt;p&gt; 사람들의 사용 패턴을 분석하고, 그에 기반하여 새로운 관점을 만들어내었다. 이런 형태로 얼마나 많은 사람들이 사용할지는 모르겠지만 나에게는 정말 맞춤앱이라는 생각까지 든다. 구글에서 앞으로 내놓을 새로운 관점들도 기대한다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/417</guid>
-      <pubDate>2017-06-07 23:26:02</pubDate>
+      <pubDate>2014-12-14 13:22:49</pubDate>
     </item>
     <item>
       <title>Code Complete 를 읽고...</title>
@@ -275,7 +275,7 @@
 &lt;p&gt;&lt;span style="font-size: 9pt; line-height: 1.5;"&gt;&lt;br /&gt;
 &lt;/span&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/416</guid>
-      <pubDate>2017-06-07 23:26:01</pubDate>
+      <pubDate>2014-12-06 23:40:46</pubDate>
     </item>
     <item>
       <title>습관은 무거운 돌을 굴리는 것과 같다</title>
@@ -287,7 +287,7 @@
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-size: 9pt; line-height: 1.5;"&gt; 처음에는 힘들더라도, 조금 움직이는데 왜 이렇게 힘들지라는 생각이 들더라도, 일단 굴리기 시작하자. 몇번만 힘을 주어 굴리면, 어느새 굴러가는 돌 위에 올라탄 자기 자신을 발견하게 될 것이다. &lt;/span&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/415</guid>
-      <pubDate>2017-06-07 23:26:01</pubDate>
+      <pubDate>2014-10-18 23:30:17</pubDate>
     </item>
     <item>
       <title>Google Cloud Storage 를 백업으로 사용하기</title>
@@ -301,7 +301,7 @@
 &lt;p&gt; 세번째로 웹 기반 회사인 구글이다보니 &lt;a href="https://console.developers.google.com" class="uri"&gt;https://console.developers.google.com&lt;/a&gt; 에서 웹으로 파일들을 관리할 수 있게 해준다. 그런데 이 웹이 구글의 이름에 걸맞지 않게 버그가 많다. 종종 화면이 멈춰버리고, 파일들을 삭제했는데 응답도 없고, 화면에 삭제한 파일들이 남아있어서 다른 페이지에 갔다가 와야 반영되기도 한다.&lt;/p&gt;
 &lt;p&gt; 결론은, Google Cloud Storage 는 윈도우에서 한글에 대한 배려가 부족하고, 웹콘솔은 아직 베타의 느낌이 남아있다. 그러니 이를 이용한 서비스를 개발할 때 이런 내용들을 고려해야 할 것 같다. 아마 구글에서도 인식하고 있으니 조만간 고쳐질 것 같긴한데, 서비스할 때는 한번쯤 체크~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/414</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-10-16 00:58:44</pubDate>
     </item>
     <item>
       <title>프로그래머의 실력에 대한 짧은 생각...</title>
@@ -311,7 +311,7 @@
 요즘 책을 읽다보면, 아... 내가 왠지 찜찜하게 느꼈던게 이거구나라는 생각을 한번씩 한다. 누군가는 나의 그 느낌을 잘 정리해서 객관화시킨 후 하나의 단어로 압축시켜놓았고 실력자들은 그 단어를 사용한다. 경험을 실력으로 바꾸려면 독서가 필요하다.&lt;br /&gt;
 결론은 책을 읽자...... ㅋ&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/413</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-08-23 16:21:15</pubDate>
     </item>
     <item>
       <title>이사 후기</title>
@@ -321,7 +321,7 @@
 &lt;p&gt;사람과 대면하는 직업은 정말 친절도가 절반이상은 먹고 들어가는듯. 그러고보니 얼마전에 에어콘을 살 때도 하이마트의 직원과 엘지베스트샵의 친절도 차이가 생각난다. 엘지베스트샵 직원분의 친절은 지금 생각해도 흐뭇할 정도. 뭐가 어떻게 다른지, 이 모델을 왜 권하는지 친절히 설명해주고, 질문도 당연히 잘 대답해주고. 하이마트는 일단 멀뚱멀뚱서있고 그냥 이 모델 사시면 돱니다라고.... 그리고 나올 때 가관인 한마디. 다른데 알아보시고 오시면 더 할인해드릴께요~ 저런말을 하는 직원에게서 물건을 사고 싶지는 않다.&lt;/p&gt;
 &lt;p&gt; 인테리어 업체는 동네 인테리어 업체를 골랐는데, 나중에 AS 가 쉬울 거라는 생각이었다. 그런데 조금 아쉬운데, 부동산에서 권해주는 업체에게 맡겼는데, 나중에 동네 가게에서 들은 얘기로는 해당 부동산과 인테리어 업체는 서로 연결되어 있다는 것. 그리고 그 옆의 인테리어 업체가 작지만 더 잘한다는 얘기... 부동산에서 권해주는 인테리어 업체는 동네 가게에서 평판을 슬쩍 물어보자.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/412</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-08-09 18:27:15</pubDate>
     </item>
     <item>
       <title>게임서버에서의 non paged pool memory 누적 현상</title>
@@ -330,7 +330,7 @@
 원인은 더미 클라이언트를 여러개 띄워서 테스트를 했는데 더미 클라이언트의 pc 가 점점 느려져서 패킷을 제대로 받지 못하자 서버가 네트웍으로 보낸 패킷들이 제대로 소모되지 못하고 non paged pool 에 쌓인것.&lt;br /&gt;
 누군가로부터 들은바로는 클라이언트마다 패킷큐를 두고 하나의 패킷이 다 전송되었음을 완료하고난 후에 다음 패킷을 보내는 방식으로는 괜찮을거라고.... 하지만 아직 정확한 테스트는 안해봤음;;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/411</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-07-25 23:20:21</pubDate>
     </item>
     <item>
       <title>모바일 티스토리 가 생겨서...</title>
@@ -339,7 +339,7 @@
 &lt;p&gt;그래서 모바일 티스토리가 나온 김에 바로바로 내용이 전달되는 수준에서 글을 적고 나중에 시간이 될 때 제대로 정리하자....(아마 정리 안 할거야 ㅠㅜ)&lt;/p&gt;
 &lt;p&gt;특히 개발관련글에 스샷올리고 이런거 좋아하지만 육아와 함께해서 제대로 정리는 힘들듯하니. 일단 정보공유 차원에서라도 적고보자!&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/410</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-07-25 23:13:20</pubDate>
     </item>
     <item>
       <title>Visual C++ 템플릿에서 특정 타입에만 브레이크포인트 설정하기</title>
@@ -347,7 +347,7 @@
       <description>&lt;p&gt;일단 코드에 브레이크포인트를 설정하고 실행 중에 걸리면 오른쪽 클릭해서 디스어셈블한다. 그러면 어떤 타입의 함수를 볼 것이냐 선택할 수 있는데 원하는 타입을 선택하면 원하는 타입의 어셈블리 코드로 가게되고 거기에 브레이크포인트를 설정하면 된다.&lt;/p&gt;
 &lt;p&gt;즉, 템플릿은 여러 타입이 각자의 어셈블리를 만들기 때문에 특정 타입의 어셈블리에 브레이크포인트를 걸어주는 것이다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/409</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-07-25 23:08:58</pubDate>
     </item>
     <item>
       <title>github 의 Atom 에디터 윈도우 빌드</title>
@@ -359,7 +359,7 @@
 &lt;p&gt;&lt;span style="background-color: transparent; font-size: 9pt; line-height: 1.5;"&gt; 다운로드 - 삭제함&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="background-color: transparent; font-size: 9pt; line-height: 1.5;"&gt; 위의 다운로드는 '윈도우 버젼'이 공식 릴리즈되거나, 드랍박스에 뭔가 문제가 생기거나, 여튼 임의로 내려갈 수 있으며, 현재 atom 에디터가 공식버젼도 불안정한 상태라는 것을 어느 정도는 감안하고 쓰세요~&lt;/span&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/408</guid>
-      <pubDate>2017-06-07 23:25:58</pubDate>
+      <pubDate>2014-05-21 22:27:08</pubDate>
     </item>
     <item>
       <title>YouTube 임베드를 모바일 웹페이지에서 쓸 때 주의점</title>
@@ -368,7 +368,7 @@
 &lt;p&gt; 그런데 최근에 다시 스마트 폰에서 해보니 재생이 안되는 것이다. 이래저래 디버깅을 해보다가 안되어서 구글 공식 문서를 뒤져보니, 이런 내용이 나왔다 : &lt;a href="https://developers.google.com/youtube/iframe_api_reference#Mobile_considerations" class="uri" class="tx-link"&gt;https://developers.google.com/youtube/iframe_api_reference#Mobile_considerations&lt;/a&gt; 대충 읽어보면, &amp;quot;데이터망에서 원치않은 다운로드를 막기 위해서 임베드된 미디어는 자동으로 재생될 수 없다&amp;quot; 그래서, playVideo() 같은 함수들은 모바일 환경에서 재생이 제대로 되지 않는 것이었다. 그래서 필요한 것은?? 바로 &amp;quot;사용자의 인터랙션&amp;quot; 이다. 즉, 한번 터치해주면 잘 동작한다.&lt;/p&gt;
 &lt;p&gt; 그래서 html5 모드에서는 기본 재생을 일부러 막고, 사용자의 입력으로 재생이 시작되기를 기다린 후, 재생이 감지되면, 기존의 자동 플레이 모드처럼 동작하도록 수정했다. '한번만 터치되면', 그 다음부터는 playVideo() 등의 함수가 제대로 동작한다. 단 한번의 터치가 필요할 뿐...&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/407</guid>
-      <pubDate>2017-06-07 23:25:46</pubDate>
+      <pubDate>2014-04-16 00:12:56</pubDate>
     </item>
     <item>
       <title>Google Cloud DNS 설정하기 - How to set up google cloud dns</title>
@@ -424,7 +424,7 @@
 &lt;p&gt; 참고로, JSON 형식을 잘못입력하면(, 를 빠트리면....) 처음부터 다시 입력해야 하므로, 많은 내용을 입력할 때는 다른 메모장을 열어서 사용하거나 vi 의 split 기능을 이용해서 미리 다른 파일에 저장해두자.&lt;/p&gt;
 &lt;p&gt; 이 포스팅의 내용은 &lt;a href="https://developers.google.com/cloud-dns/" class="uri" class="tx-link"&gt;https://developers.google.com/cloud-dns/&lt;/a&gt; 의 내용을 간략히 옮긴 것이므로, 추가 사항은 당연히 이 공식 홈페이지를 참고하세요~~ :)&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/406</guid>
-      <pubDate>2017-06-07 23:25:46</pubDate>
+      <pubDate>2014-04-07 22:26:02</pubDate>
     </item>
     <item>
       <title>바이오쇼크1 플레이 후기</title>
@@ -438,7 +438,7 @@
 &lt;p&gt;전체 분석 : &lt;a href="http://sarammugur.egloos.com/1588650" class="uri"&gt;http://sarammugur.egloos.com/1588650&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;주요 단어(영어) : &lt;a href="http://bioshock.wikia.com/wiki/A\_man\_chooses,\_a\_slave\_obeys" class="uri"&gt;http://bioshock.wikia.com/wiki/A\_man\_chooses,\_a\_slave\_obeys&lt;/a&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/405</guid>
-      <pubDate>2017-06-07 23:25:46</pubDate>
+      <pubDate>2014-04-07 21:04:02</pubDate>
     </item>
     <item>
       <title>[책내용정리] 읽기 좋은 코드가 좋은 코드다</title>
@@ -541,7 +541,7 @@
 &lt;span style="font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"&gt;&lt;/span&gt;&lt;br /&gt;
 &lt;span style="font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"&gt;&lt;/span&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/404</guid>
-      <pubDate>2017-06-07 23:25:40</pubDate>
+      <pubDate>2014-01-09 16:01:50</pubDate>
     </item>
     <item>
       <title>넥서스5, 넥서스7 이 윈도우에서 MTP 연결이 제대로 되지 않을때</title>
@@ -549,7 +549,7 @@
       <description>&lt;p&gt;장치 관리자를 열어놓고, 넥서스5/7 를 연결하면 &amp;quot;새롭게 추가되는 장치 - 이름이 아마 AD inteface 이런거임&amp;quot;에서 오른쪽 클릭해서 '제거' -&amp;gt; '드라이버도 함께 제거' 한 후, 케이블을 분리 후 다시 연결하면 제대로 MTP 로 잡힌다.&lt;/p&gt;
 &lt;p&gt; 아마 Android SDK 를 업데이트하면서 이런 문제가 생긴 것으로 '짐작'만 하고 있음;;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/403</guid>
-      <pubDate>2017-06-07 23:25:39</pubDate>
+      <pubDate>2013-11-25 21:52:07</pubDate>
     </item>
     <item>
       <title>eclipse 마켓을 통해 쉽게 안드로이드 개발 환경 구축하기</title>
@@ -569,7 +569,7 @@
 &lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 24pt;"&gt; 이렇게 쉽게 설치할 수 있는데!!!!!&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;ps : 많이 퍼뜨려주세요...;;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/402</guid>
-      <pubDate>2017-06-07 23:25:39</pubDate>
+      <pubDate>2012-11-19 22:44:51</pubDate>
     </item>
     <item>
       <title>구글 핵페어 참가 후기</title>
@@ -593,7 +593,7 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src="IMG_20121118_150538.jpg" width="465" height="620" /&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/401</guid>
-      <pubDate>2017-06-07 23:25:08</pubDate>
+      <pubDate>2012-11-19 22:25:00</pubDate>
     </item>
     <item>
       <title>프로그래머가 개인 프로젝트를 해야하는 5가지 이유</title>
@@ -613,7 +613,7 @@
 &lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 14pt; "&gt; 지금 바로 개인 프로젝트를 시작하자.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;  &lt;/p&gt;</description>
       <guid>http://blog.wimy.com/400</guid>
-      <pubDate>2017-06-07 23:25:07</pubDate>
+      <pubDate>2012-09-23 17:12:06</pubDate>
     </item>
     <item>
       <title>[책] 나무를 심은 사람</title>
@@ -624,7 +624,7 @@
 이 책의 작가, 내용을 애니메이션으로 만든 분, 그리고 그 애니메이션을 어릴적의 나에게 접하게 해주신 분께 감사드린다.&lt;/p&gt;
 &lt;p&gt;ps : 유투브에서 검색하면 애니메이션도 볼 수 있음~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/399</guid>
-      <pubDate>2017-06-07 23:25:07</pubDate>
+      <pubDate>2012-09-23 16:47:10</pubDate>
     </item>
     <item>
       <title>git 이 어려운 이유</title>
@@ -643,7 +643,7 @@
 &lt;p&gt; 실제로 한번 해보면 어렵지 않아요~ 막강한 기능은 나중에 익혀도 되요(저도 잘 몰라요~) ^^/&lt;/p&gt;
 &lt;p&gt;ps: 앞에도 적었지만, (저같은)프로그래머는 귀찮은거 싫어하기 때문에, git 관련해서 쉬운 GUI 사용법은.... 잉여력이 폭발할 때 적어볼까 생각 중 ㅋ&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/397</guid>
-      <pubDate>2017-06-07 23:25:26</pubDate>
+      <pubDate>2012-06-25 00:55:59</pubDate>
     </item>
     <item>
       <title>디아블로3 뜯어보니 짝퉁샤넬백</title>
@@ -654,7 +654,7 @@
 &lt;p&gt; 디아블로3에 열광하는 남자들을 이해 못하는 여자들에게 '12년만에 발매된 샤넬백이라는 말' 이 있었는데, 이건 마치 '12년 만에 발매된 샤넬백이 뜯어보니 샤넬짝퉁백이었다' 인 것 같다.&lt;/p&gt;
 &lt;p&gt; 다만, 서버는 완전 짝퉁이지만, 게임 자체 컨텐츠는 꽤 훌륭하므로, '샤넬 마크는 진퉁인 짝퉁' 이랄까? -_-;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/396</guid>
-      <pubDate>2017-06-07 23:25:19</pubDate>
+      <pubDate>2012-06-11 00:16:44</pubDate>
     </item>
     <item>
       <title>2000년도에 플래시로 만들었던 학과 소개</title>
@@ -668,7 +668,7 @@
 &lt;p&gt; 다시봐도... 우리과인 컴퓨터과학과보다 화학과를 더 잘했는듯 ㅎㅎ&lt;/p&gt;
 &lt;p&gt;첨부파일: &lt;a href="cChemi.swf"&gt;cChemi.swf&lt;/a&gt; &lt;a href="cCS.swf"&gt;cCS.swf&lt;/a&gt;&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/395</guid>
-      <pubDate>2017-06-07 23:25:12</pubDate>
+      <pubDate>2012-05-19 19:53:24</pubDate>
     </item>
     <item>
       <title>Google App Engine 으로 개발하기</title>
@@ -698,7 +698,7 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;</description>
       <guid>http://blog.wimy.com/394</guid>
-      <pubDate>2017-06-07 23:25:12</pubDate>
+      <pubDate>2012-05-14 02:07:03</pubDate>
     </item>
     <item>
       <title>크롬 확장 프로그램 만들기 슬라이드와 devfestXKorea 후기</title>
@@ -729,7 +729,7 @@
 &lt;p&gt;출처 : 이원제님 구글 플러스 - &lt;a href="https://plus.google.com/107621265594457706915/posts/VsvLVVgLGKG" class="uri"&gt;https://plus.google.com/107621265594457706915/posts/VsvLVVgLGKG&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;</description>
       <guid>http://blog.wimy.com/393</guid>
-      <pubDate>2017-06-07 23:25:08</pubDate>
+      <pubDate>2012-05-14 01:40:32</pubDate>
     </item>
     <item>
       <title>김프(gimp)에서 Round Corner Filter 를 사용할 수 없을 때</title>
@@ -745,7 +745,7 @@
 &lt;p&gt;&lt;img src="remove_alpha_channel.png" width="596" height="495" /&gt;&lt;/p&gt;
 &lt;p&gt;ps : 이 블로그가 김프 관련 블로그는 아니지만, round corner 를 사용하여 작업 중 이상하게 동작하지 않을때가 있어서 검색해봐도 내가 원하는 답이 없었는데, 다행히 알파 채널이 문제란 걸 알아내서 올려봄~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/392</guid>
-      <pubDate>2017-06-07 23:25:07</pubDate>
+      <pubDate>2012-05-09 18:16:51</pubDate>
     </item>
     <item>
       <title>ZViewer 0.8.0 배포합니다</title>
@@ -753,7 +753,7 @@
       <description>&lt;p&gt; 정말 2년 9개월 만에 새로운 버젼을 배포합니다. 감회가 새롭네요. 역시 본인이 프로그램을 써야(!!) 계속 발전이 되어갑니다. 그리고 시간이 있어야 ㅋ&lt;/p&gt;
 &lt;p&gt; 자세한 내용은 &lt;a href="http://zviewer.wimy.com/9" class="tx-link"&gt;[ 링크 ]&lt;/a&gt; 를 따라가세요~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/391</guid>
-      <pubDate>2017-06-07 23:25:07</pubDate>
+      <pubDate>2012-04-29 23:08:05</pubDate>
     </item>
     <item>
       <title>우분투 리눅스 11.10 에서 12.04 로 업그레이드 후기 - ubuntu upgrading from 11.10 to 12.04</title>
@@ -787,7 +787,7 @@
 &lt;p&gt; 업그레이드는 꽤 잘됨&lt;/p&gt;
 &lt;p&gt; 11.10 이라면 12.04 로 무조건 추천하고 싶을 정도(사실 안할 이유가 없잖아!! LTS 이기도 하고 ㅋㅋ)&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/390</guid>
-      <pubDate>2017-06-07 23:25:07</pubDate>
+      <pubDate>2012-04-29 19:33:13</pubDate>
     </item>
     <item>
       <title>구글 코드잼 2012 round 1A Password 후기 및 문제 풀이</title>
@@ -967,7 +967,7 @@
 &lt;p&gt;  남의 코드를 보면 이해는 힘들지만 배울 점이 많다. 군더더기 없는 깔끔한 코드 +_+ 나는 재귀호출을 통해서, N, N-1, N-2 를 구해가는데, 처음부터 1,2,3 으로 시작해서 배열에 넣고 있다. 나도 다음부터는 저렇게 배열로 해야겠다 큭&lt;/p&gt;
 &lt;p&gt; large 입력에 대해 속도를 비교해보면.... 처참하다 ㅋ 그래도 나도 문제를 풀었다구!!!! 라고 위안삼아본다.&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/389</guid>
-      <pubDate>2017-06-07 23:25:06</pubDate>
+      <pubDate>2012-04-28 16:46:23</pubDate>
     </item>
     <item>
       <title>올블릿 클릭당 수익이 5분의 1로 줄다 ㅠㅜ</title>
@@ -978,7 +978,7 @@
 &lt;p&gt; 뭐 여튼 어디 다른 좋은거 없는지 찾아봐야 할 듯~&lt;/p&gt;
 &lt;p&gt;Update(2012.05.25) : 애드바이미(&lt;a href="https://adby.me/" class="uri"&gt;https://adby.me/&lt;/a&gt;) 라는 서비스가 꽤 괜찮은거 같네요~&lt;/p&gt;</description>
       <guid>http://blog.wimy.com/388</guid>
-      <pubDate>2017-06-07 23:25:05</pubDate>
+      <pubDate>2012-04-21 01:52:59</pubDate>
     </item>
   </channel>
 </rss>
